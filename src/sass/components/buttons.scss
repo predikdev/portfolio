@@ -1,0 +1,13 @@
+.cta {
+  padding: 1rem 1.5rem;
+  background-color: var(--secondary-bg);
+  border-radius: 10px;
+  color: var(--main-font);
+  font-weight: 500;
+  width: fit-content;
+
+  a {
+    color: var(--main-font);
+    line-height: 20px;
+  }
+}

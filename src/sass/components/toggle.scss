@@ -1,0 +1,44 @@
+@use '../utilities/mixins.scss' as *;
+
+.toggle {
+  @include slideFromTopAnimation;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 99;
+
+  span {
+    width: 40px;
+    height: 3px;
+    background-color: var(--secondary-bg);
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+
+    &::after,
+    &::before {
+      height: 3px;
+      content: '';
+      position: absolute;
+      background-color: var(--secondary-bg);
+      border-radius: 10px;
+      transition: all 0.5s ease-in-out;
+    }
+    &::before {
+      width: 20px;
+      transform: translateY(-12px);
+    }
+
+    &::after {
+      width: 20px;
+      transform: translate(10px, 12px);
+    }
+  }
+}
