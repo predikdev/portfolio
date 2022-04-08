@@ -3,12 +3,18 @@
 .hero {
   @include slideFromBottomAnimation;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  place-items: center;
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+      font-size: var(--font-40);
+      line-height: 4rem;
+    }
+  }
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
