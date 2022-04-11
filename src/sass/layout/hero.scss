@@ -11,15 +11,6 @@
     flex-direction: column;
     justify-content: center;
 
-    &--title {
-      font-size: var(--font-40);
-      line-height: 4rem;
-    }
-
-    &--desc {
-      margin: 2rem 0;
-    }
-
     &--links {
       display: flex;
       align-items: center;
