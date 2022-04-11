@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10rem;
+  background-color: var(--secondary-bg);
+
+  svg {
+    fill: white;
+  }
+  .text-main {
+    color: var(--main-font);
+  }
+}
+
