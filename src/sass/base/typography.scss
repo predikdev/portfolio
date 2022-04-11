@@ -1,13 +1,20 @@
-h1 {
+.title-large {
   font-size: var(--font-40);
   font-weight: 500;
-  line-height: 3rem;
+  line-height: 4rem;
 }
 
-h2 {
-  margin: 1rem 0;
+.title-medium {
+  font-size: var(--font-32);
+  font-weight: 500;
+  line-height: 4rem;
+}
+
+.title-small {
+  margin: 2rem 0;
   font-size: var(--font-20);
   font-weight: 300;
   color: var(--secondary-font);
   line-height: 3rem;
 }
+
