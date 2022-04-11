@@ -1,5 +1,6 @@
 const toggle = document.querySelector('.toggle');
 const menu = document.querySelector('.nav__menu--mobile');
+
 let menuOpen = false;
 
 const mobileMenuItems = document
@@ -25,3 +26,10 @@ toggle.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+window.scroll({
+  top: 0,
+  left: 0,
+  behavior: 'smooth',
+});
+
