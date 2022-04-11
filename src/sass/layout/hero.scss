@@ -11,9 +11,29 @@
     flex-direction: column;
     justify-content: center;
 
-    &__title {
+    &--title {
       font-size: var(--font-40);
       line-height: 4rem;
+    }
+
+    &--desc {
+      margin: 2rem 0;
+    }
+
+    &--links {
+      display: flex;
+      align-items: center;
+
+      .hero__content--social {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+
+        .github-icon,
+        .linkedin-icon {
+          margin: 0 0.5rem;
+        }
+      }
     }
   }
 }
