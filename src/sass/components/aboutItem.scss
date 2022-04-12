@@ -1,0 +1,16 @@
+.about__item {
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  border: 1px solid #000;
+  text-align: center;
+  background-color: var(--secondary-bg);
+  // color: var(--main-font);
+  color: var(--yellow);
+}
+
+@media screen and (min-width: 46.875em) {
+  .about__item {
+    font-size: var(--font-20);
+  }
+}
+

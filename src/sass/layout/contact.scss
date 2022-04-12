@@ -1,0 +1,63 @@
+.contact {
+  min-height: 100vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  &__desc {
+    margin: 2rem 0;
+
+    span {
+      color: #000;
+      font-weight: 500;
+    }
+  }
+  .form {
+    &__name,
+    &__email,
+    &__message {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 2rem;
+
+      label {
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+      }
+      input,
+      textarea {
+        height: 3rem;
+        padding: 1rem;
+        border: none;
+        border-left: 0.5rem solid var(--shade-3);
+        border-radius: 0 10px 10px 0;
+        outline: none;
+        font-family: 'Poppins';
+        font-size: var(--font-16);
+      }
+
+      textarea {
+        height: 10rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  .contact {
+    min-height: 77vh;
+
+    .form {
+      label,
+      input,
+      textarea {
+        font-size: var(--font-20);
+      }
+    }
+  }
+
+  @media screen and (min-width: 64em) {
+    .contact {
+      min-height: 77vh;
+    }
+  }
+}
+

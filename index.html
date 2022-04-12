@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link rel="manifest" href="/manifest.json" /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./src/sass/style.scss" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <nav class="nav" role="banner">
+      <div class="nav__items container" role="navigation">
+        <a class="nav__logo" href="#" aria-label="home">Lukas Pscheidt</a>
+        <div class="nav__menu mobile-hidden">
+          <ul class="nav__menu--desktop">
+            <li class="nav__menu--item cta">
+              <a href="#work">View Work</a>
+            </li>
+            <li class="nav__menu--item"><a href="#about">About</a></li>
+            <li class="nav__menu--item"><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="toggle desktop-hidden">
+          <span></span>
+        </div>
+      </div>
+      <div class="nav__menu desktop-hidden">
+        <ul class="nav__menu--mobile">
+          <li class="nav__menu--item">
+            <a href="#about" class="mobile__item">About</a>
+          </li>
+          <li class="nav__menu--item">
+            <a href="#contact" class="mobile__item">Contact</a>
+          </li>
+          <li class="nav__menu--item cta">
+            <a href="#work" class="mobile__item">View Work</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <section class="hero container">
+      <div class="hero__content">
+        <h1 class="hero__content--title title-main">
+          Self-tought <span class="yellow">frontend</span> developer that brings
+          <span class="yellow">ideas</span> to life with
+          <span class="yellow">code</span>.
+        </h1>
+        <h2 class="hero__content--desc title-medium">
+          Pixel perfection, sense to details
+        </h2>
+        <div class="hero__content--links">
+          <a href="#work" class="button">View Work</a>
+          <div class="hero__content--social">
+            <a href="https://github.com/predikdev" target="_blank">
+              <svg
+                class="svg github-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                data-name="Layer 1"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/luk%C3%A1%C5%A1-pscheidt-91903b18a/"
+              target="_blank"
+            >
+              <svg
+                class="svg linkedin-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                data-name="Layer 1"
+                width="48"
+                height="48"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="work" class="work container">
+      <h2 class="work__title title-large">
+        Picked <span class="yellow">work</span>
+      </h2>
+      <div class="work__content">
+        <div class="work__item">
+          <img src="./src/images/WebDesign.jpg" alt="" />
+          <h2 class="work__item--title title-small">Web Design Agency</h2>
+          <p class="work__item--desc text-main">
+            Just some desc about this project while I think that this
+            ifnormation is needed on every portfolio.
+          </p>
+          <a href="#" class="work__item--button button">More...</a>
+        </div>
+        <div class="work__item">
+          <img src="./src/images/elixir.png" alt="" />
+          <h2 class="work__item--title title-small">Elixir - Design System</h2>
+          <p class="work__item--desc text-main">
+            Just some desc about this project while I think that this
+            ifnormation is needed on every portfolio.
+          </p>
+          <a href="#" class="work__item--button button">More...</a>
+        </div>
+        <div class="work__item">
+          <img src="./src/images/frontier.jpg" alt="" />
+          <h2 class="work__item--title title-small">Frontier Agency</h2>
+          <p class="work__item--desc text-main">
+            Just some desc about this project while I think that this
+            ifnormation is needed on every portfolio.
+          </p>
+          <a href="#" class="work__item--button button">More...</a>
+        </div>
+        <div class="work__item">
+          <img src="./src/images/seuply.jpg" alt="" />
+          <h2 class="work__item--title title-small">Seuply Project</h2>
+          <p class="work__item--desc text-main">
+            Just some desc about this project while I think that this
+            ifnormation is needed on every portfolio.
+          </p>
+          <a href="#" class="work__item--button button">More...</a>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="about container">
+      <h2 class="about__title title-large">
+        Something <span class="yellow">about</span> me
+      </h2>
+      <div class="about__title--small">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 101 101"
+        >
+          <path
+            d="M50.4 54.5c10.1 0 18.2-8.2 18.2-18.2S60.5 18 50.4 18s-18.2 8.2-18.2 18.2 8.1 18.3 18.2 18.3zm0-31.7c7.4 0 13.4 6 13.4 13.4s-6 13.4-13.4 13.4S37 43.7 37 36.3s6-13.5 13.4-13.5zM18.8 83h63.4c1.3 0 2.4-1.1 2.4-2.4 0-12.6-10.3-22.9-22.9-22.9H39.3c-12.6 0-22.9 10.3-22.9 22.9 0 1.3 1.1 2.4 2.4 2.4zm20.5-20.5h22.4c9.2 0 16.7 6.8 17.9 15.7H21.4c1.2-8.9 8.7-15.7 17.9-15.7z"
+          />
+        </svg>
+        <h3 class="title-small">Who I am</h3>
+      </div>
+      <p class="about__desc text-main">
+        Lukas, 28 years old self-taught frontend develper and occasionally also
+        a designer. My main focus is to use modern technologies and techniques
+        to bring the best result.
+      </p>
+      <div class="about__title--small">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 64 64"
+        >
+          <path
+            d="M59 33H58V30a5 5 0 0 0-5-5H43V22a5 5 0 0 0-5-5H26a5 5 0 0 0-5 5v3H11a5 5 0 0 0-5 5v3H5a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1H6V58a5 5 0 0 0 5 5H53a5 5 0 0 0 5-5V41h1a1 1 0 0 0 1-1V34A1 1 0 0 0 59 33zM23 22a3 3 0 0 1 3-3H38a3 3 0 0 1 3 3v3H39V23a2 2 0 0 0-2-2H27a2 2 0 0 0-2 2v2H23zm14 3H27V23H37zM8 30a3 3 0 0 1 3-3H53a3 3 0 0 1 3 3v3H8zM56 58a3 3 0 0 1-3 3H11a3 3 0 0 1-3-3V41H28v7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V41H56zM30 45h4v2H30zm4-2H30V39h4zm24-4H36V38a1 1 0 0 0-1-1H29a1 1 0 0 0-1 1v1H6V35H58zM13 9a1 1 0 0 0-.94 1.35A7.44 7.44 0 0 0 25.55 11h12.9a7.44 7.44 0 0 0 13.49-.65A1 1 0 0 0 51 9H45.45L44.4 8l1.05-1H51a1 1 0 0 0 .94-1.35A7.44 7.44 0 0 0 38.45 5H25.55a7.44 7.44 0 0 0-13.49.65A1 1 0 0 0 13 7h5.55L19.6 8 18.55 9zm6.64 1.72l2.1-2a1 1 0 0 0 0-1.44l-2.1-2A1 1 0 0 0 19 5H14.7A5.46 5.46 0 0 1 19 3a5.32 5.32 0 0 1 5 3.35 1 1 0 0 0 .93.65H39.11A1 1 0 0 0 40 6.35a5.32 5.32 0 0 1 5-3.35A5.46 5.46 0 0 1 49.3 5H45.05a1 1 0 0 0-.69.28l-2.1 2a1 1 0 0 0 0 1.44l2.1 2a1 1 0 0 0 .69.28H49.3a5.46 5.46 0 0 1-4.25 2 5.32 5.32 0 0 1-5-3.35A1 1 0 0 0 39.11 9H24.89a1 1 0 0 0-.93.65A5.32 5.32 0 0 1 19 13a5.46 5.46 0 0 1-4.25-2H19A1 1 0 0 0 19.64 10.72z"
+            data-name="Layer 6"
+          />
+        </svg>
+        <h3 class="title-small">What I am using</h3>
+      </div>
+      <p class="text-main">For Design</p>
+      <ul class="about__desc--uses">
+        <li class="about__item">Adobe XD</li>
+        <li class="about__item">Figma</li>
+      </ul>
+      <p class="text-main">For Development</p>
+      <ul class="about__desc--uses">
+        <li class="about__item">HTML</li>
+        <li class="about__item">CSS/SASS</li>
+        <li class="about__item">BEM</li>
+        <li class="about__item">JavaScript</li>
+        <li class="about__item">Git</li>
+      </ul>
+    </section>
+    <section id="contact" class="contact container">
+      <h2 class="contact__title title-large">
+        Want to <span class="yellow">contact</span> me?
+      </h2>
+      <p class="contact__desc text-main">
+        Feel free to contact me via form down below, send me a message on
+        LinkedIn or just send me a email to
+        <span
+          ><a
+            href="mailto:social.predik@gmail.com?subject=Contact from lukaspscheidt.com &body=Hello Lukas, I am contacting you because..."
+            target="_blank"
+            >hello@lukaspscheidt.com</a
+          >
+        </span>
+      </p>
+      <form
+        action="https://formsubmit.co/a2000eceadc928415971885eda242c3c"
+        method="POST"
+        enctype="multipart/form-data"
+        name="EmailFrom"
+        class="form"
+        id="form"
+        autocomplete="off"
+      >
+        <div class="form__name">
+          <label for="name">What's your name?</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+        </div>
+        <div class="form__email">
+          <label for="email">Your email adress</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+            required
+          />
+        </div>
+        <div class="form__message">
+          <label for="message">Type message here</label>
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Hey Lukas, I'm contacting you..."
+            required
+          ></textarea>
+        </div>
+        <button type="submit" value="Send message" class="button">
+          Send message
+        </button>
+      </form>
+    </section>
+    <footer>
+      <div class="footer__socials">
+        <a href="https://github.com/predikdev" target="_blank">
+          <svg
+            class="svg github-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12,2.2467A10.00042,10.00042,0,0,0,8.83752,21.73419c.5.08752.6875-.21247.6875-.475,0-.23749-.01251-1.025-.01251-1.86249C7,19.85919,6.35,18.78423,6.15,18.22173A3.636,3.636,0,0,0,5.125,16.8092c-.35-.1875-.85-.65-.01251-.66248A2.00117,2.00117,0,0,1,6.65,17.17169a2.13742,2.13742,0,0,0,2.91248.825A2.10376,2.10376,0,0,1,10.2,16.65923c-2.225-.25-4.55-1.11254-4.55-4.9375a3.89187,3.89187,0,0,1,1.025-2.6875,3.59373,3.59373,0,0,1,.1-2.65s.83747-.26251,2.75,1.025a9.42747,9.42747,0,0,1,5,0c1.91248-1.3,2.75-1.025,2.75-1.025a3.59323,3.59323,0,0,1,.1,2.65,3.869,3.869,0,0,1,1.025,2.6875c0,3.83747-2.33752,4.6875-4.5625,4.9375a2.36814,2.36814,0,0,1,.675,1.85c0,1.33752-.01251,2.41248-.01251,2.75,0,.26251.1875.575.6875.475A10.0053,10.0053,0,0,0,12,2.2467Z"
+            />
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/luk%C3%A1%C5%A1-pscheidt-91903b18a/"
+          target="_blank"
+        >
+          <svg
+            class="svg linkedin-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            data-name="Layer 1"
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"
+            />
+          </svg>
+        </a>
+      </div>
+      <p class="text-main">© 2022 Lukas Pscheidt</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script>
+    <script src="/src/js/app.js"></script>
+    <!-- <script src="/src/js/gsap.js"></script> -->
+  </body>
+</html>
+

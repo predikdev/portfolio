@@ -1,0 +1,44 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.mobile-hidden {
+  display: none;
+}
+
+.yellow {
+  color: var(--yellow);
+}
+
+@media screen and (min-width: 46.875em) {
+  .container {
+    max-width: 750px;
+  }
+  .desktop-hidden {
+    display: none;
+  }
+  .mobile-hidden {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  .container {
+    max-width: 1500px;
+  }
+}
+

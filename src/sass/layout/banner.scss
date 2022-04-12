@@ -1,0 +1,59 @@
+@use '../utilities/mixins.scss' as *;
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  min-height: 65px;
+  background-color: var(--main-bg);
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  .nav__items {
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+
+    .nav__logo {
+      @include slideFromTopAnimation;
+    }
+    .nav__menu {
+      @include slideFromTopAnimation;
+      margin-left: auto;
+      overflow: hidden;
+
+      .nav__menu--desktop {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .nav__menu--item {
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  .nav {
+    .nav__items {
+      .nav__logo {
+        font-size: var(--font-20);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .nav {
+    .nav__items {
+      font-size: var(--font-20);
+      .nav__logo {
+        font-size: var(--font-20);
+      }
+    }
+  }
+}
+

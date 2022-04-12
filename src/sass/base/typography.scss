@@ -1,0 +1,83 @@
+.title-main,
+.title-large {
+  color: var(--basic-font);
+  font-weight: 500;
+  font-size: var(--font-40);
+  line-height: 3rem;
+}
+
+.title-large {
+  font-size: 2rem;
+  padding-top: 2em;
+}
+
+.title-medium {
+  color: var(--secondary-font);
+  margin: 2rem 0;
+  font-size: var(--font-20);
+  line-height: 4rem;
+}
+
+.title-small {
+  font-size: var(--font-20);
+  font-weight: 500;
+  color: var(--basic-font);
+  line-height: 3rem;
+}
+
+.text-main {
+  margin: 1rem 0;
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--secondary-font);
+}
+
+@media screen and (min-width: 48em) {
+  .title-main {
+    font-size: var(--font-64);
+    padding-top: 4em;
+    line-height: 6rem;
+  }
+
+  .title-large {
+    font-size: var(--font-60);
+  }
+
+  .title-medium {
+    font-size: var(--font-28);
+    margin: 5rem 0;
+  }
+
+  .title-small {
+    font-size: var(--font-32);
+  }
+
+  .text-main {
+    font-size: var(--font-20);
+  }
+}
+
+@media screen and (min-width: 48em) and (orientation: landscape) {
+  .title-large {
+    padding-top: 2em;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media screen and (min-width: 100em) {
+  .container {
+    max-width: 1500px;
+  }
+}
+

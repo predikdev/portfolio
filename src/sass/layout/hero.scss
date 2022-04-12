@@ -1,0 +1,47 @@
+@use '../utilities/mixins.scss' as *;
+
+.hero {
+  @include slideFromBottomAnimation;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+
+  .hero__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &--links {
+      display: flex;
+      align-items: center;
+
+      .hero__content--social {
+        display: flex;
+        justify-content: flex-end;
+        flex: 1;
+
+        .github-icon,
+        .linkedin-icon {
+          margin: 0 0.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  .hero {
+    min-height: 77vh;
+    place-items: center;
+    &__content {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 80em) {
+  .hero {
+    min-height: 100vh;
+  }
+}
+
