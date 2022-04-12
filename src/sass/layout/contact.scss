@@ -44,12 +44,20 @@
 @media screen and (min-width: 46.875em) {
   .contact {
     min-height: 77vh;
-  }
-}
 
-@media screen and (min-width: 64em) {
-  .contact {
-    min-height: 77vh;
+    .form {
+      label,
+      input,
+      textarea {
+        font-size: var(--font-20);
+      }
+    }
+  }
+
+  @media screen and (min-width: 64em) {
+    .contact {
+      min-height: 77vh;
+    }
   }
 }
 
