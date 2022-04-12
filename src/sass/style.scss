@@ -1,7 +1,7 @@
 @use './base/' as *;
-@use './utilities/' as *;
 @use './components/' as *;
 @use './layout/' as *;
+@use './utilities/' as *;
 
 * {
   margin: 0;
@@ -13,6 +13,7 @@ html {
   font-family: 'Poppins';
   font-size: var(--font-16);
   background-color: var(--main-bg);
+  // background-color: var(--ternary-bg);
   scroll-behavior: smooth;
 }
 

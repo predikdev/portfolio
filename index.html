@@ -26,14 +26,14 @@
         <a class="nav__logo" href="#" aria-label="home">Lukas Pscheidt</a>
         <div class="nav__menu mobile-hidden">
           <ul class="nav__menu--desktop">
-            <li class="nav__menu--item"><a href="#about">About</a></li>
-            <li class="nav__menu--item"><a href="#contact">Contact</a></li>
-            <li class="nav__menu--item button">
+            <li class="nav__menu--item cta">
               <a href="#work">View Work</a>
             </li>
+            <li class="nav__menu--item"><a href="#about">About</a></li>
+            <li class="nav__menu--item"><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="toggle">
+        <div class="toggle desktop-hidden">
           <span></span>
         </div>
       </div>
@@ -45,7 +45,7 @@
           <li class="nav__menu--item">
             <a href="#contact" class="mobile__item">Contact</a>
           </li>
-          <li class="nav__menu--item button">
+          <li class="nav__menu--item cta">
             <a href="#work" class="mobile__item">View Work</a>
           </li>
         </ul>
@@ -53,12 +53,13 @@
     </nav>
     <section class="hero container">
       <div class="hero__content">
-        <h1 class="hero__content--title title-large">
-          A self-tought frontend web developer that brings ideas to life with
-          code.
+        <h1 class="hero__content--title title-main">
+          Self-tought <span class="yellow">frontend</span> developer that brings
+          <span class="yellow">ideas</span> to life with
+          <span class="yellow">code</span>.
         </h1>
-        <h2 class="hero__content--desc title-small">
-          Based in Germany, Bayern
+        <h2 class="hero__content--desc title-medium">
+          Pixel perfection, sense to details
         </h2>
         <div class="hero__content--links">
           <a href="#work" class="button">View Work</a>
@@ -99,8 +100,10 @@
       </div>
     </section>
     <section id="work" class="work container">
+      <h2 class="work__title title-large">
+        Picked <span class="yellow">work</span>
+      </h2>
       <div class="work__content">
-        <h2 class="work__content--title title-large">Picked projects</h2>
         <div class="work__item">
           <img src="./src/images/WebDesign.jpg" alt="" />
           <h2 class="work__item--title title-small">Web Design Agency</h2>
@@ -140,7 +143,9 @@
       </div>
     </section>
     <section id="about" class="about container">
-      <h2 class="about__title title-large">Something about me</h2>
+      <h2 class="about__title title-large">
+        Something <span class="yellow">about</span> me
+      </h2>
       <div class="about__title--small">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -188,7 +193,9 @@
       </ul>
     </section>
     <section id="contact" class="contact container">
-      <h2 class="contact__title title-large">Want to work with me?</h2>
+      <h2 class="contact__title title-large">
+        Want to <span class="yellow">contact</span> me?
+      </h2>
       <p class="contact__desc text-main">
         Feel free to contact me via form down below, send me a message on
         LinkedIn or just send me a email to

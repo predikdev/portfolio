@@ -29,3 +29,13 @@
   }
 }
 
+@media screen and (min-width: 46.875em) {
+  .hero {
+    min-height: 77vh;
+    place-items: center;
+    &__content {
+      width: 100%;
+    }
+  }
+}
+

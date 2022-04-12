@@ -20,10 +20,19 @@
         // }
       }
       &--title {
-        margin: 0.5rem 0;
-        color: #000;
-        font-weight: 500;
+        margin-top: 2rem;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .work__content {
+    max-width: 768px;
+    // margin: 0 auto;
+
+    .work__item {
+      max-width: 100%;
     }
   }
 }

@@ -19,6 +19,7 @@
       @include slideFromTopAnimation;
     }
     .nav__menu {
+      @include slideFromTopAnimation;
       margin-left: auto;
       overflow: hidden;
 
@@ -30,6 +31,16 @@
         .nav__menu--item {
           margin-left: 1rem;
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  .nav {
+    .nav__items {
+      .nav__logo {
+        font-size: var(--font-20);
       }
     }
   }

@@ -2,11 +2,27 @@
   min-height: 100vh;
   margin-bottom: 1rem;
   padding-top: 5rem;
+
+  .work__title {
+    margin-bottom: 2rem;
+  }
   .work__content {
-    display: flex;
-    flex-direction: column;
-    row-gap: 2rem;
-    column-gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 1rem;
+    // display: flex;
+    // flex-direction: column;
+    // row-gap: 2rem;
+    // column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .work {
+    .work__content {
+      row-gap: 2rem;
+    }
   }
 }
 

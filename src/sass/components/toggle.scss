@@ -18,7 +18,8 @@
   span {
     width: 40px;
     height: 3px;
-    background-color: var(--secondary-bg);
+    // background-color: var(--secondary-bg);
+    background-color: var(--yellow);
     border-radius: 10px;
     transition: all 0.5s ease-in-out;
 
@@ -42,3 +43,10 @@
     }
   }
 }
+
+// @media screen and (min-width: 50em) {
+//   .toggle {
+//     display: none;
+//   }
+// }
+

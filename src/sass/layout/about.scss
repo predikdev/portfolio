@@ -1,4 +1,5 @@
 .about {
+  min-height: 100vh;
   padding-top: 5rem;
   overflow-x: hidden;
   margin-bottom: 1rem;
@@ -15,6 +16,7 @@
   .about__title--small {
     display: flex;
     align-items: center;
+    margin-top: 2rem;
 
     .title-small {
       margin-left: 0.5rem;
@@ -28,6 +30,15 @@
     grid-template-columns: repeat(auto-fit, minmax(110px, max-content));
     gap: 1rem;
     margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 46.875em) {
+  .about {
+    min-height: 77vh;
+    .about__title--small {
+      margin-top: 5em;
+    }
   }
 }
 
