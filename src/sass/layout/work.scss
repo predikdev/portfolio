@@ -11,10 +11,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     row-gap: 1rem;
-    // display: flex;
-    // flex-direction: column;
-    // row-gap: 2rem;
-    // column-gap: 2rem;
   }
 }
 
@@ -29,7 +25,8 @@
 @media screen and (min-width: 80em) {
   .work {
     .work__content {
-      grid-template-columns: 1fr 1fr;
+      max-width: 1280px;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
       gap: 2rem;
     }
   }
