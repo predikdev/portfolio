@@ -1,7 +1,0 @@
-@mixin slideFromTopAnimation {
-  animation: 0.75s cubic-bezier(0.29, 0.95, 0.73, 0.99) 0s 1 slideFromTop;
-}
-
-@mixin slideFromBottomAnimation {
-  animation: 0.75s cubic-bezier(0.29, 0.95, 0.73, 0.99) 0s 1 slideFromBottom;
-}
