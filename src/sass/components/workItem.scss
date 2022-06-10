@@ -14,10 +14,6 @@
         transition: 0.3s ease-in-out;
         touch-action: auto;
         border-radius: 10px;
-
-        // &:hover {
-        //   transform: scale(1.1);
-        // }
       }
       &--title {
         margin-top: 2rem;
@@ -29,7 +25,7 @@
 @media screen and (min-width: 48em) {
   .work__content {
     max-width: 768px;
-    // margin: 0 auto;
+    margin: 0 auto;
 
     .work__item {
       max-width: 100%;
@@ -37,18 +33,19 @@
   }
 }
 
-// @media (hover: hover) and (pointer: fine) {
-//   .work {
-//     .work__content {
-//       .work__item {
-//         img {
-//           &:active,
-//           &:hover {
-//             transform: scale(1.5);
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
+@media screen and (min-width: 80em) {
+  .work__content {
+    max-width: 768px;
+    margin: 0 auto;
+
+    .work__item {
+      max-width: 100%;
+
+      img {
+        height: 26rem;
+        object-fit: cover;
+      }
+    }
+  }
+}
 
