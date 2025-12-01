@@ -1,5 +1,64 @@
 @import "tailwindcss/theme";
 
-@tailwind base;
-@tailwind components;
 @tailwind utilities;
+
+@theme {
+  --font-sans: "Inter", system-ui, sans-serif;
+
+  /* --------------------------------------
+   * Background Colors
+   * ------------------------------------ */
+  --color-background: #0a0a0b; /* Main page background */
+  --color-background-subtle: #111113; /* Cards, modals, elevated surfaces */
+  --color-background-muted: #18181b; /* Inputs, subtle hover states */
+  --color-background-emphasis: #1c1c1f; /* Highlighted sections */
+
+  /* --------------------------------------
+   * Text Colors
+   * ------------------------------------ */
+  --color-primary-text: #fafafa; /* Primary text (headings, main content) */
+  --color-secondary-text: #a1a1aa; /* Secondary text (labels, metadata) */
+  --color-ternary-text: #71717a; /* Tertiary text (placeholders, disabled) */
+
+  /* --------------------------------------
+   * Accent Colors
+   * ------------------------------------ */
+  --color-accent: #10b981; /* Primary accent – CTAs, links, icons */
+  --color-accent-hover: #34d399; /* Accent hover state */
+  --color-accent-muted: #022c22; /* Text on accent backgrounds */
+
+  /* --------------------------------------
+   * Border Colors
+   * ------------------------------------ */
+  --color-border: #27272a; /* Default border */
+  --color-border-muted: #1f1f23; /* Subtle border */
+  --color-border-emphasis: #3f3f46; /* Emphasized border */
+
+  /* --------------------------------------
+   * Status Colors
+   * ------------------------------------ */
+  --color-success: #22c55e; /* Success state */
+  --color-error: #ef4444; /* Error state */
+  --color-warning: #f59e0b; /* Warning state */
+
+  /* --------------------------------------
+   * Border Radius
+   * ------------------------------------ */
+  --radius-sm: 0.375rem; /* Small UI elements (6px) */
+  --radius-md: 0.5rem; /* Buttons, inputs (8px) */
+  --radius-lg: 0.75rem; /* Cards (12px) */
+  --radius-xl: 1rem; /* Larger cards, modals (16px) */
+}
+
+/* ------------------------------------------
+ * Global Defaults
+ * ---------------------------------------- */
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-primary-text);
+  font-family: var(--font-sans);
+}
