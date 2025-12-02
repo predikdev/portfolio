@@ -1,4 +1,5 @@
 ---
+import Navigation from "../components/Navigation.tsx";
 import "../styles/global.css";
 ---
 
@@ -9,6 +10,7 @@ import "../styles/global.css";
     <title>Portfolio</title>
   </head>
   <body>
+    <Navigation client:load/>
     <main class="mx-auto flex h-full max-w-3xl">
       <slot />
     </main>
