@@ -13,5 +13,10 @@
     "build": "npm run build --workspace web && npm run build --workspace studio",
     "build:web": "npm run build --workspace web",
     "build:studio": "npm run build --workspace studio"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.7.2"
   }
 }
