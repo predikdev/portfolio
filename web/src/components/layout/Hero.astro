@@ -4,23 +4,35 @@ import { IconBadge } from "../ui/Icon";
 import { ArrowRight, Cpu, FileEdit, SearchCheck, Zap } from "lucide-react";
 ---
 
-<section class="w-full overflow-hidden px-6 pt-10 pb-24 md:pt-32">
+<section class="overflow-hidden py-16" data-stagger>
   <div class="from-accent/5 absolute inset-0 bg-linear-to-b via-transparent to-transparent"></div>
-  <div class="relative mx-auto max-w-6xl">
-    <h1 class="xs:text-4xl text-5xl leading-tight font-semibold tracking-wide md:text-6xl lg:text-7xl">
+
+  <div class="relative mx-auto max-w-6xl space-y-0 text-center">
+    <h1
+      class="xs:text-4xl text-5xl leading-tight font-semibold tracking-wide md:text-6xl lg:text-7xl"
+      data-stagger-child
+    >
       Tvořím weby na míru,
       <br />
       <span class="text-emerald-400">které přívádějí klienty</span>
     </h1>
-    <p class="mt-6 max-w-xl text-lg leading-relaxed text-zinc-400">
+
+    <p class="mx-auto mt-6 max-w-xl text-lg leading-relaxed text-zinc-400" data-stagger-child>
       Nedělám pouze webové stránky, ale moderní digitální řešení, které nejenom zaujme, ale také přesvědčí.
     </p>
-    <div class="mt-10 flex flex-col gap-4 sm:flex-row">
-      <Button href="/" variant="primary" size="md">Nezávazná konzultace zdarma<ArrowRight size={16} /></Button
-      >
-      <Button href="/" variant="outline" size="md">Moje práce<ArrowRight size={16} /></Button>
+
+    <div class="mt-10 flex flex-col justify-center gap-4 sm:flex-row" data-stagger-child>
+      <Button href="/" variant="primary" size="md">
+        Nezávazná konzultace zdarma
+        <ArrowRight size={16} />
+      </Button>
+      <Button href="/" variant="outline" size="md">
+        Moje práce
+        <ArrowRight size={16} />
+      </Button>
     </div>
-    <div class="mt-12 flex flex-wrap gap-4">
+
+    <div class="mt-12 flex flex-wrap justify-center gap-4" data-stagger-child>
       <IconBadge icon={Zap} label="Rychlé načítání" />
       <IconBadge icon={Cpu} label="Moderní technologie" />
       <IconBadge icon={FileEdit} label="Jednoduchá správa obsahu" />

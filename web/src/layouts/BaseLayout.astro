@@ -3,15 +3,23 @@ import Navigation from "../components/Navigation.tsx";
 import "../styles/global.css";
 ---
 
-<html lang="cs">
+<html lang="cs" class="no-js">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <script is:inline>
+      document.documentElement.classList.remove("no-js");
+      document.documentElement.classList.add("has-js");
+    </script>
+    <script src="/src/scripts/staggerAnimation.ts"></script>
+    <script src="/src/scripts/slideUpAnimation.ts"></script>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <Navigation client:load />
-    <main class="mx-auto flex h-full max-w-6xl">
+    <main
+      class="mx-auto flex max-w-sm flex-col px-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-7xl xl:px-8"
+    >
       <slot />
     </main>
   </body>

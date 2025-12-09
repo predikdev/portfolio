@@ -1,6 +1,5 @@
 @import "tailwindcss/theme";
-
-@tailwind utilities;
+@import "tailwindcss/utilities";
 
 @theme {
   --font-sans: "Inter", system-ui, sans-serif;
@@ -65,6 +64,24 @@ body {
   font-family: var(--font-sans);
 }
 
+@layer base {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+}
+
+.has-js [data-stagger-child],
+.has-js [data-slide-up] {
+  opacity: 0;
+}
+
+.has-js [data-stagger-child].stagger-visible,
+.has-js [data-slide-up].slide-up-visible {
+  opacity: 1;
+}
+
 button {
   background: transparent;
   border: none;
@@ -75,4 +92,23 @@ button {
 
 a {
   text-decoration: none;
+}
+
+@layer utilities {
+  @keyframes fade-up-blur {
+    0% {
+      opacity: 0;
+      transform: translateY(24px);
+      filter: blur(10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  .animate-fade-up-blur {
+    animation: fade-up-blur 600ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  }
 }
