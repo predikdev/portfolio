@@ -7,31 +7,30 @@
   /* --------------------------------------
    * Background Colors
    * ------------------------------------ */
-  --color-background: #0a0a0b; /* Main page background */
-  --color-background-subtle: #111113; /* Cards, modals, elevated surfaces */
-  --color-background-muted: #18181b; /* Inputs, subtle hover states */
-  --color-background-emphasis: #1c1c1f; /* Highlighted sections */
+  --color-background: #0a0a0b;
+  --color-background-secondary: #0d0d0e;
+  /* --color-background-subtle: #111113; */
+  /* --color-background-muted: #18181b; */
+  /* --color-background-emphasis: #1c1c1f; */
 
   /* --------------------------------------
    * Text Colors
    * ------------------------------------ */
   --color-primary-text: #fafafa; /* Primary text (headings, main content) */
   --color-secondary-text: #a1a1aa; /* Secondary text (labels, metadata) */
-  --color-ternary-text: #71717a; /* Tertiary text (placeholders, disabled) */
+  /* --color-ternary-text: #71717a; Tertiary text (placeholders, disabled) */
 
   /* --------------------------------------
    * Accent Colors
    * ------------------------------------ */
   --color-accent: #10b981; /* Primary accent – CTAs, links, icons */
-  --color-accent-hover: #34d399; /* Accent hover state */
-  --color-accent-muted: #022c22; /* Text on accent backgrounds */
 
   /* --------------------------------------
    * Border Colors
    * ------------------------------------ */
   --color-border: #27272a; /* Default border */
-  --color-border-muted: #1f1f23; /* Subtle border */
-  --color-border-emphasis: #3f3f46; /* Emphasized border */
+  /*--color-border-muted: #1f1f23;  Subtle border */
+  /*--color-border-emphasis: #3f3f46;  Emphasized border */
 
   /* --------------------------------------
    * Status Colors
@@ -52,6 +51,20 @@
 /* ------------------------------------------
  * Global Defaults
  * ---------------------------------------- */
+@layer base {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto max-w-sm px-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-7xl xl:px-8;
+  }
+}
+
 * {
   border-color: var(--color-border);
 }
@@ -62,14 +75,6 @@ body {
   background-color: var(--color-background);
   color: var(--color-primary-text);
   font-family: var(--font-sans);
-}
-
-@layer base {
-  *,
-  ::before,
-  ::after {
-    box-sizing: border-box;
-  }
 }
 
 .has-js [data-stagger-child],
