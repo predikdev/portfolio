@@ -2,7 +2,7 @@
 
 import { Tag } from "./ui/Tag";
 import { ArrowRight } from "lucide-react";
-import Project from "../project.png";
+import Project from "../images/project.png";
 
 const services = [
   {
