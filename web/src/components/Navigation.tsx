@@ -31,7 +31,7 @@ export default function Navigation() {
   return (
     <>
       <header className="bg-background/80 relative z-30 border-b shadow-sm" data-slide-up>
-        <div className="mx-auto max-w-sm px-4 sm:max-w-lg md:max-w-2xl lg:max-w-4xl xl:max-w-7xl xl:px-8">
+        <div className="container">
           <div className="flex h-16 items-center justify-between">
             <a href="/" className="text-primary-text text-lg font-bold uppercase hover:text-emerald-500">
               Lukas Pscheidt
